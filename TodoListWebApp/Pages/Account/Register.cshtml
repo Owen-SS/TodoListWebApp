@@ -1,0 +1,37 @@
+﻿@page
+@model RegisterModel
+
+<h1>Register</h1>
+
+<form method="post">
+    <div>
+        <label asp-for="Input.Email">Email</label>
+        <input asp-for="Input.Email" type="email"/>
+        <span asp-validation-for="Input.Email" class="text-danger" />
+    </div>
+
+    <div>
+        <label asp-for="Input.Password">Password</label>
+        <input asp-for="Input.Password" type="password"/>
+        <span asp-validation-for="Input.Password" class="text-danger" />
+    </div>
+
+    <div>
+        <label asp-for="Input.ConfirmPassword">Confirm Password</label>
+        <input asp-for="Input.ConfirmPassword" type="password" />
+        <span asp-validation-for="Input.ConfirmPassword" class="text-danger" />
+    </div>
+
+    <div>
+        <label asp-for="Input.Phone">Phone</label>
+        <input asp-for="Input.Phone"/>
+        <span asp-validation-for="Input.Password" class="text-danger" />
+    </div>
+
+    <button type="submit">Register</button>
+</form>
+
+@section Scripts{
+    <partial name="_ValidationScriptsPartial" />
+}
+

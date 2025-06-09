@@ -1,0 +1,10 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/TodoListWebApp/obj
+/TodoListWebApp/bin
+/TodoListWebApp/todo.db
+/TodoListWebApp/todo.db-shm
+/TodoListWebApp/todo.db-wal
